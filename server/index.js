@@ -6,6 +6,8 @@ const UserModel = require('./models/Users');
 // parses the body
 app.use(express.json());
 
+const PORT = 7001
+
 mongoose.connect('mongodb+srv://user123:test123@mern-tut.lx6oz.mongodb.net/merntutorial?retryWrites=true&w=majority');
 
 app.get('/getUsers', (req, res) => {
@@ -27,6 +29,6 @@ app.post('/createUser', async (req, res) => {
 })
 
 
-app.listen(7001, () => {
-    console.log('Server is running..')
+app.listen(PORT, () => {
+    console.log(`Server is running on PORT ${PORT}..`)
 });
