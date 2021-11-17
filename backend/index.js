@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const UserModel = require('./models/Users');
 
-const cors = requre('cors');
+const cors = require('cors');
 
 // parses the body
 app.use(express.json());
