@@ -1,1 +1,1 @@
-Learning MERN in 60 min..
+Learning MERN..
