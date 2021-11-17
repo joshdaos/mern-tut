@@ -20,7 +20,14 @@ function App() {
       age, 
       username,
     }).then((response) => {
-      alert("User created");
+      // alert("User created");
+      setListOfUsers([...listOfUsers, 
+        { 
+        name, 
+        age, 
+        username,
+        }
+      ]);
     });
   };
 
