@@ -3,8 +3,11 @@ const app = express();
 const mongoose = require('mongoose');
 const UserModel = require('./models/Users');
 
+const cors = requre('cors');
+
 // parses the body
 app.use(express.json());
+app.use(cors());
 
 const PORT = 7001
 
